@@ -147,7 +147,11 @@
   .span{
     font-weight: 400;
     font-size: 14px;
-   
+  }
+
+  .right-div-wrapper{
+    padding: 15px;
+
   }
 }
 
@@ -172,4 +176,141 @@
     gap: 10px;
     
    }
+}
+
+@media (min-width: 834px){
+  .section1{
+    position: relative;
+    width: 100%;
+  }
+
+  .right-div-wrapper{
+    position: absolute;
+    top: 20%;
+    width: 40%;
+    height: 60%;
+    right: 3%;
+    background-color: #FFFFFF;
+    
+  }
+
+  .right-div{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .picture-text{
+    top: 20%;
+    left: 5%;
+    width: 50%;
+  }
+
+  .section-header{
+    padding-bottom: 10px;
+  }
+
+  .new-line{
+    margin-bottom: 10px;
+  }
+
+  .vectors{
+    display: inline-flex;
+  }
+}
+
+@media (min-width: 320px){
+  .right-footer div:nth-child(odd){
+    display: none;
+  }
+
+  .left-footer img, .footer-item img{
+    width: 100%;
+    height: 100%;
+     object-fit: cover;
+   object-position: 15%;
+   
+  }
+
+  .left-footer, .footer-item{
+       position: relative;
+    width: 100%;
+    max-width: 320px;
+    height: 300px;
+    overflow: hidden;
+    margin: 36px auto;
+  }
+
+  .footer-block img{
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .txt{
+    top: 45%;
+  }
+.footer-block{
+  width: 320px;
+  height: 250px;
+  border-radius: 3px;
+  border: 1px solid #000000;
+  
+}
+
+.right-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+}
+
+@media (min-width:375px){
+  .left-footer, .footer-item{
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .right-footer div:nth-child(1){
+    display: inline;
+  }
+
+  .right-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+
+}
+
+@media (min-width: 834px){
+  .footer-box{
+    display: flex;
+  }
+
+  .right-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .right-footer div:nth-child(3){
+    display: inline;
+  }
+
+  .left-footer, .footer-item{
+       position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    overflow: hidden;
+    margin: 10%;
+  }
+
+  .footer-block{
+  width: 320px;
+  height: 277px;
+  margin-left: 80%;
+  }
 }
