@@ -301,16 +301,16 @@
 
   .left-footer, .footer-item{
        position: relative;
-    width: 100%;
-    max-width: 800px;
+    width: calc(100% -10%);
+    
     height: 400px;
     overflow: hidden;
     margin: 10%;
   }
 
   .footer-block{
-  width: 320px;
+  width: 60%;
   height: 277px;
-  margin-left: 80%;
+  margin-left: 30%;
   }
 }
